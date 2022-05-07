@@ -1,0 +1,38 @@
+# 登陆测试用例
+---
+"Case_name": "参数正确，登陆成功"
+"Url": "/connect/oauth/tokens"
+"headers":
+  "Content-Type": "application/json"
+  "x-biz-code": "1"
+"data":
+  "mobile": "18218080002"
+  "password": "111111"
+  "mobile_area_code": "86"
+  "os": "mac os"
+  "grant_type": "password"
+  "client_id": "gaodingx"
+  "client_secret": "7da458070e57b98e11d00d9286f23537"
+"Expect": '"user_id": "536870879"'
+
+
+---
+"Case_name": "参数错误，登陆失败"
+"Url": "/connect/oauth/tokens"
+"headers":
+  "Content-Type": "application/json"
+  "x-biz-code": "1"
+"data":
+  "mobile": "18218086670"
+  "password": "123456"
+  "mobile_area_code": "86"
+  "os": "mac os"
+  "grant_type": "password"
+  "client_id": "gaodingx"
+  "client_secret": "7da458070e57b98e11d00d9286f23537"
+"Expect": '"code": 1002006'
+
+
+
+
+

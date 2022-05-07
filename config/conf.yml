@@ -1,0 +1,17 @@
+
+
+BASE:
+  UmsLogin:
+    Test: "https://ums-fat.gaoding.com"
+    Release: "https://ums-stage.gaoding.com"
+    Prod: "https://ums.gaoding.com"
+
+  FzService:
+    Test: "https://fat.gaoding.com"
+    Release: "https://stage.gaoding.com"
+    Prod: "https://www.gaoding.com"
+
+  LogLevel: "debug"
+  LogExtension: ".log"
+  CaseFile: "ApiCases1.xlsx"
+

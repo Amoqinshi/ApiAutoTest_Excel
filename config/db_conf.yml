@@ -1,0 +1,27 @@
+
+# 测试环境数据库配置信息
+DB_Test:
+  db_host: "211.103.136.242"
+  db_user: "test"
+  db_pwd: "test123456"
+  db_name: "meiduo"
+  db_charset: "utf8"
+  db_port: "7090"
+
+# 预发环境数据库配置信息
+DB_Release:
+  db_host: "211.103.136.242"
+  db_user: "release"
+  db_pwd: "release123456"
+  db_name: "meiduo"
+  db_charset: "utf8"
+  db_port: "7090"
+
+# 生产环境数据库配置信息
+DB_Prod:
+  db_host: "211.103.136.242"
+  db_user: "prod"
+  db_pwd: "prod123456"
+  db_name: "meiduo"
+  db_charset: "utf8"
+  db_port: "7090"
