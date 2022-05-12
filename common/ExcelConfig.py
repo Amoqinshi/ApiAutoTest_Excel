@@ -8,13 +8,15 @@
 '''
 class ExcelDataConfig(object):
 
+    caseNo = "用例编号"
     caseId = "用例ID"
     caseName = "接口名称"
     caseDesc = "测试案例"
     caseUrl = "请求URL"
     casePre = "前置条件"
-    caseMethod = "请求类型"
+    caseMethod = "请求方法"
     caseParamsType = "请求参数类型"
+    caseHeaders = "请求头"
     caseParams = "请求参数"
     caseExpect = "预期结果"
     caseActual = "实际结果"

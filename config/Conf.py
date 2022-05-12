@@ -124,7 +124,8 @@ if __name__ == "__main__":
     # print(log_path)
     # print(ConfigYaml().get_db_conf("DB_Test"))
     # print(ConfigYaml().get_db_conf("DB_Release"))
-    print(ConfigYaml().get_conf_UmsTestUrl())
+    # print(ConfigYaml().get_conf_UmsTestUrl())
+    pass
 
 
 

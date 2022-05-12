@@ -28,7 +28,7 @@ class RequestLogic(object):
         if method == "GET":
             r_content = requests.get(url, params=params, headers=headers)
         elif method == "POST":
-            r_content = requests.post(url, data=data, headers=headers,verify=False)
+            r_content = requests.post(url, data=data, headers=headers)
         code = r_content.status_code
         try:
             body = r_content.json()

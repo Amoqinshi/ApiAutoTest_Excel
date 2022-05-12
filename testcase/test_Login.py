@@ -21,6 +21,7 @@ import pytest
 
 test_file = os.path.join(Conf.get_caselist_path(),"test_Login.yml")
 cast_list = YamlReader(test_file).reader_all()
+
 class Test(object):
 
     def setup_class(self):
@@ -40,6 +41,10 @@ class Test(object):
         headers = login.get("headers")
         response_json = self.request.request_post(url=url,data=data)
         self.Log.info("response data：%s" % (str(response_json)))
+
+    def test_gettoken(self,get_loginToken):
+        a = get_loginToken
+        print("我已经正常获取到token啦",a)
 
 
     def teardowm_class(self):
