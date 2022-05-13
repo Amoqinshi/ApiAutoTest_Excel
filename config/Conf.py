@@ -23,8 +23,15 @@ db_config_file = os.path.dirname(file) + os.sep + "db_conf.yml"
 case_file = BASE_DIR + os.sep + "data"
 # 获取logs文件所在目录
 log_path = BASE_DIR + os.sep+"logs"
+# 获取report目录所在路径
+report_path = BASE_DIR + os.sep + "report"
 
-
+def get_report_path():
+    """
+    获取report绝对路径
+    :return:
+    """
+    return report_path
 
 def get_config_path():
     return config_path
@@ -112,9 +119,8 @@ class ConfigYaml():
         """
         return self.db_conf.get(DB_type)
 
-    # def get_case_path(self):
-    #     return self.config.get("")
-
+    def get_email_info(self):
+        return self.config.get("Email")
 
 
 
@@ -124,8 +130,8 @@ if __name__ == "__main__":
     # print(log_path)
     # print(ConfigYaml().get_db_conf("DB_Test"))
     # print(ConfigYaml().get_db_conf("DB_Release"))
-    # print(ConfigYaml().get_conf_UmsTestUrl())
-    pass
+    print(ConfigYaml().get_email_info())
+    # pass
 
 
 

@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_Login11",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_run[case0]",
+          "uid" : "c7c314b5b826716f",
+          "parentUid" : "759c09004ac986edaef9f9e1be25253f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652422254588,
+            "stop" : 1652422254593,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '001', '用例ID': 'Login', '接口名称': '登陆接口', '测试案例': '登陆成功', '请求URL': '/connect/oauth/tokens', '前置条件': '', '请求方法': 'POST', '请求参数类别': 'json', '请求头': '{\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{\"grant_type\": \"password\",\"client_id\": \"gaodingx\",\"client_secret\": \"7da458070e57b98e11d00d9286f23537\",\"os\": \"mac os\",\"mobile_area_code\": 86,\"mobile\": \"18218080002\",\"password\": \"111111\"}', '预期结果': 200.0, '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "Current个人信息查看接口",
+          "uid" : "4fbdf5fe186f969d",
+          "parentUid" : "759c09004ac986edaef9f9e1be25253f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652422254597,
+            "stop" : 1652422255241,
+            "duration" : 644
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '002', '用例ID': 'Current', '接口名称': '个人信息查看接口', '测试案例': '查询个人信息', '请求URL': '/api/website/ps/user/current', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{}', '预期结果': '\"706691603\"', '实际结果': '', '是否运行': 'Y'}" ]
+        } ],
+        "uid" : "759c09004ac986edaef9f9e1be25253f"
+      } ],
+      "uid" : "7b9b3323e64e59648259b855a01c6df1"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ]
+}

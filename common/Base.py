@@ -9,10 +9,18 @@
 
 from config.Conf import ConfigYaml
 from utils.MysqlUtil import ConnectDatabase
-import json,re
+from utils.LogUtil import my_log
+from utils.EmailUtil import EmailSend
+import json,re,subprocess
+
 
 
 p = r"\${(.+)}\$"
+smtp_server = ConfigYaml().get_email_info().get("smtpserver")
+username = ConfigYaml().get_email_info().get("username")
+password = ConfigYaml().get_email_info().get("password")
+receiver = ConfigYaml().get_email_info().get("receiver")
+
 
 def init_db(DB_type):
     db_info = ConfigYaml().get_db_conf(DB_type)
@@ -72,11 +80,44 @@ def data_find(headers):
         headers = res_find(headers)
     return headers
 
+def allure_report(report_path,report_html):
+    """
+    生成allure测试报告
+    :param report_path:
+    :param report_html:
+    :return:
+    """
+    cmd = "allure generate {} -o {} --clean".format(report_path,report_html)
+    # my_log().log("生成测试报告")
+    try:
+        subprocess.call(cmd,shell=True)
+    except Exception as e:
+        my_log().error("执行报告生成失败，请检查一下测试环境相关配置")
+
+def send_email(report_html_path="",title="测试",content="内容"):
+    """
+    发送邮件
+    :param report_html_path:
+    :param title:
+    :param content:
+    :return:
+    """
+
+    A = EmailSend(smtp_server=smtp_server,
+                  username=username,
+                  pwd=password,
+                  receiver=receiver,
+                  title=title,
+                  content=content,
+                  file=report_html_path)
+    A.send_email()
+
+
 
 if __name__=="__main__":
-    print(res_sub('{"authorization":"Bearer ${token}$", "x-business-id": "1", "x-channel-id": "8"}',"123"))
+    # print(res_sub('{"authorization":"Bearer ${token}$", "x-business-id": "1", "x-channel-id": "8"}',"123"))
     # print(data_find('{"authorization":"Bearer ${token}$", "x-business-id": "1", "x-channel-id": "8"}'))
     # print(res_find('{"authorization":"Bearer ${token}$", "x-business-id": "1", "x-channel-id": "8"}'))
     # pattern = '{"authorization":"Bearer ${token}$", "x-business-id": "1", "x-channel-id": "8"}'
     # print(res_find(pattern))
-    # pass
+    pass

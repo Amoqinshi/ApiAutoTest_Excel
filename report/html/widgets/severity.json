@@ -1,0 +1,21 @@
+[ {
+  "uid" : "c7c314b5b826716f",
+  "name" : "test_run[case0]",
+  "time" : {
+    "start" : 1652422254588,
+    "stop" : 1652422254593,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fbdf5fe186f969d",
+  "name" : "Current个人信息查看接口",
+  "time" : {
+    "start" : 1652422254597,
+    "stop" : 1652422255241,
+    "duration" : 644
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

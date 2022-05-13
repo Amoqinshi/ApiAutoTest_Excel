@@ -6,7 +6,7 @@
 @Author ：琴师
 @Date ：2022/5/4 4:01 下午 
 '''
-import os,json
+import os,json,allure
 from utils.RequestsUtil import RequestLogic
 from utils.YamlUtil import YamlReader
 from utils.AssertUtil import Assert
@@ -36,6 +36,7 @@ class TestLogin(object):
     def setup_class(self):
         self.Log = my_log(log_name=os.path.basename(__file__))
         self.request = RequestLogic()
+
 
     def run_api(self,url,method,data=None,headers=None):
         """
@@ -72,11 +73,14 @@ class TestLogin(object):
     @pytest.mark.parametrize("case",run_list)
     def test_run(self,case):
 
+
+        caseid = case.get(data_key.caseId)
         pre = case.get(data_key.casePre)
         data = case.get(data_key.caseParams)
         headers = case.get(data_key.caseHeaders)
         method = case.get(data_key.caseMethod)
         expect = case.get(data_key.caseExpect)
+        api_name = case.get(data_key.caseName)
         if case.get(data_key.caseId) == "Login":
             url = ConfigYaml().get_conf_UmsTestUrl() + case.get(data_key.caseUrl)
         else:
@@ -86,10 +90,21 @@ class TestLogin(object):
             pre_case = CaseData(case_file).get_case_pre(pre)
             prse = self.run_pre(pre_case)
 
-        headers1 = self.get_creat_relation(headers,prse)
-        res = self.run_api(url,method,data=data,headers= Base.json_parse(headers1))
-        Assert.assert_in_body(res["body"]["ums_user"],expect)
-        # print("正常用例执行",res)
+            headers1 = self.get_creat_relation(headers,prse)
+            res = self.run_api(url,method,data=data,headers= Base.json_parse(headers1))
+            print("正常用例执行",res)
+            # 二级标签
+            allure.dynamic.story(api_name)
+            #用例id+名称
+            allure.dynamic.title(caseid+api_name)
+            desc = "请求url:{}</br>" \
+                   "请求方法:{}</br>" \
+                   "期望结果:{}</br>" \
+                   "实际结果:{}".format(url,method,expect,res)
+
+            allure.dynamic.description(desc)
+
+        # Assert.assert_in_body(res["body"]["ums_user"],expect)
 
     def get_creat_relation(self,headers,pre_case_result):
         """
@@ -106,9 +121,11 @@ class TestLogin(object):
 
 
 if __name__=="__main__":
-    pytest.main(["-s","test_Login11.py"])
+    report_path = Conf.get_report_path() + os.sep + "result"
+    report_html_path = Conf.get_report_path() + os.sep + "html"
+    pytest.main(["-s","test_Login11.py","--alluredir",report_path])
+    Base.allure_report(report_path,report_html_path)
+    Base.send_email(title="接口测试报告",content=report_html_path)
     # pass
     # print(TestLogin().get_creat_relation(headers={"authorization":"Bearer ${token}$","x-business-id":"1","x-channel-id":"8"},pre_case_result={'code': 200, 'body': {'is_new': False, 'user_id': 706691603, 'access_token': 'eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1bXMiLCJzdWIiOjcwNjY5MTYwMywiYXVkIjoiZ2FvZGluZ3giLCJleHAiOjE2NTI0Mjg5MTAsImp0aSI6IjIzZTU4ZDhiZjU4YzhkNTMxOGRmNTk5YWM0NDM0MzE2OWI1MGQ5NDAifQ.iOnf-sMJ8EBuOnyJCDTseFgM-EtftrY0EDRLeajd_a4', 'refresh_token': '5e04c8005f00fa669d99a8f2b0abcfb1eb506be5', 'access_token_expires_at': '2022-05-13T08:01:50.000Z', 'refresh_token_expires_at': '2022-05-27T08:01:50.046Z', 'access_token_life_time': 86400, 'refresh_token_life_time': 1296000}}))
-
-
 
