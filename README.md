@@ -1,4 +1,5 @@
-# ApiAutoTest
+# 持续集成的配置
+## 一、Jenkins和Docker的安装
 Dcoker桌面版安装：
 https://www.runoob.com/docker/macos-docker-install.html
 
@@ -27,3 +28,4 @@ docker run -d -p 80:8080 -p 50000:50000 -v jenkins:/var/jenkins_home -v /etc/loc
 访问Jenkins：
 localhost：80
 
+## 二、Jenkins插件的配置
