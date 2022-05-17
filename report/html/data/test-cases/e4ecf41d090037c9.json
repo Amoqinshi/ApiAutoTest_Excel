@@ -1,0 +1,136 @@
+{
+  "uid" : "e4ecf41d090037c9",
+  "name" : "User-purpose常用用途查看接口",
+  "fullName" : "testcase.testApi.TestLogin#test_run",
+  "historyId" : "ad90ae95fc3a68ffeabd9fe63eafb26b",
+  "time" : {
+    "start" : 1652752128625,
+    "stop" : 1652752131058,
+    "duration" : 2433
+  },
+  "description" : "请求url:https://fat.gaoding.com/api/ai_search/gd_web/home/user_purpose</br>请求方法:GET</br>期望结果:</br>实际结果:{'code': 200, 'body': [{'id': 4799696, 'name': '公众号首图', 'preview': {'icon': {'width': None, 'type': 'svg', 'url': 'https://st0.dancf.com/csc/4390/v2/filter/20220301-101055-4087.svg', 'height': None}, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793871,4799666,4799696'}, {'id': 4799694, 'name': '公众号次图', 'preview': {'icon': None, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793871,4799666,4799694'}, {'id': 4793994, 'name': '通用', 'preview': {'icon': None, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793993,4793994'}]}",
+  "descriptionHtml" : "<p>请求url:https://fat.gaoding.com/api/ai_search/gd_web/home/user_purpose</br>请求方法:GET</br>期望结果:</br>实际结果:{'code': 200, 'body': [{'id': 4799696, 'name': '公众号首图', 'preview': {'icon': {'width': None, 'type': 'svg', 'url': 'https://st0.dancf.com/csc/4390/v2/filter/20220301-101055-4087.svg', 'height': None}, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793871,4799666,4799696'}, {'id': 4799694, 'name': '公众号次图', 'preview': {'icon': None, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793871,4799666,4799694'}, {'id': 4793994, 'name': '通用', 'preview': {'icon': None, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793993,4793994'}]}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652752116832,
+      "stop" : 1652752116833,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "请求url:https://fat.gaoding.com/api/ai_search/gd_web/home/user_purpose</br>请求方法:GET</br>期望结果:</br>实际结果:{'code': 200, 'body': [{'id': 4799696, 'name': '公众号首图', 'preview': {'icon': {'width': None, 'type': 'svg', 'url': 'https://st0.dancf.com/csc/4390/v2/filter/20220301-101055-4087.svg', 'height': None}, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793871,4799666,4799696'}, {'id': 4799694, 'name': '公众号次图', 'preview': {'icon': None, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793871,4799666,4799694'}, {'id': 4793994, 'name': '通用', 'preview': {'icon': None, 'width': None, 'type': None, 'url': None, 'height': None}, 'tree_ids': '1612458,1612529,1612532,4793993,4793994'}]}",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6c740d4b06bfb44f",
+      "name" : "log",
+      "source" : "6c740d4b06bfb44f.txt",
+      "type" : "text/plain",
+      "size" : 2148
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652752133531,
+      "stop" : 1652752133531,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "常用用途查看接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "testApi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "hengyedeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "51180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.testApi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'用例编号': '007', '用例ID': 'User-purpose', '接口名称': '常用用途查看接口', '测试案例': '查询个人常用用途', '请求URL': '/api/ai_search/gd_web/home/user_purpose', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "447b58fe8fbc0428",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652751919486,
+        "stop" : 1652751921932,
+        "duration" : 2446
+      }
+    }, {
+      "uid" : "58b91fa9cdb2ca14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652698124004,
+        "stop" : 1652698125821,
+        "duration" : 1817
+      }
+    }, {
+      "uid" : "7a50ce89788e02ed",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'str' object has no attribute 'get'",
+      "time" : {
+        "start" : 1652694247819,
+        "stop" : 1652694248419,
+        "duration" : 600
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4ecf41d090037c9.json",
+  "parameterValues" : [ "{'用例编号': '007', '用例ID': 'User-purpose', '接口名称': '常用用途查看接口', '测试案例': '查询个人常用用途', '请求URL': '/api/ai_search/gd_web/home/user_purpose', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}" ]
+}

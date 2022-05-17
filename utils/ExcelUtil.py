@@ -31,7 +31,7 @@ class ExcelReader():
         return self.case
 
 if __name__=="__main__":
-    # excel = ExcelReader("../data/ApiCases1.xlsx")
+    # excel = ExcelReader("../data/ApiCases.xlsx")
     # print(excel.data())
     pass
 

@@ -1,0 +1,8 @@
+INFO     testApi.py:testApi.py:53 request data：{"grant_type": "password","client_id": "gaodingx","client_secret": "7da458070e57b98e11d00d9286f23537","os": "mac os","mobile_area_code": 86,"mobile": "18218080002","password": "111111"}
+DEBUG    urllib3.connectionpool:connectionpool.py:971 Starting new HTTPS connection (1): ums-fat.gaoding.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:452 https://ums-fat.gaoding.com:443 "POST /connect/oauth/tokens HTTP/1.1" 200 516
+INFO     testApi.py:testApi.py:55 response data：{'code': 200, 'body': {'is_new': False, 'user_id': 706691603, 'access_token': 'eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1bXMiLCJzdWIiOjcwNjY5MTYwMywiYXVkIjoiZ2FvZGluZ3giLCJleHAiOjE2NTI4Mzg1MjgsImp0aSI6IjQyMmRmNjljODgzNmNmNDE0MGEyZmMwMTMzYzkxMmVlMTRhOTBlNGMifQ.RtMFjW5DU0Aimc6vGWn3LpeHt8-LMIKKWF2Kcu-yyF8', 'refresh_token': 'fa36526c183493ea8e63ea0ce391af55007f6d32', 'access_token_expires_at': '2022-05-18T01:48:48.000Z', 'refresh_token_expires_at': '2022-06-01T01:48:48.733Z', 'access_token_life_time': 86400, 'refresh_token_life_time': 1296000}}
+INFO     testApi.py:testApi.py:49 request data：{}
+DEBUG    urllib3.connectionpool:connectionpool.py:971 Starting new HTTPS connection (1): fat.gaoding.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:452 https://fat.gaoding.com:443 "GET /api/aggregate/search/hotword?%7B%7D HTTP/1.1" 200 90
+INFO     testApi.py:testApi.py:51 response data：{'code': 200, 'body': {'placeholder': {'title': '坑位2', 'url': None}, 'hots': [{'title': '可乐', 'type': 'inject'}]}}

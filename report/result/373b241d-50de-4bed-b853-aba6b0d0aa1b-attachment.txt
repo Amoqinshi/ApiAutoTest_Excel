@@ -1,0 +1,8 @@
+INFO     testApi.py:testApi.py:53 request data：{"grant_type": "password","client_id": "gaodingx","client_secret": "7da458070e57b98e11d00d9286f23537","os": "mac os","mobile_area_code": 86,"mobile": "18218080002","password": "111111"}
+DEBUG    urllib3.connectionpool:connectionpool.py:971 Starting new HTTPS connection (1): ums-fat.gaoding.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:452 https://ums-fat.gaoding.com:443 "POST /connect/oauth/tokens HTTP/1.1" 200 516
+INFO     testApi.py:testApi.py:55 response data：{'code': 200, 'body': {'is_new': False, 'user_id': 706691603, 'access_token': 'eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1bXMiLCJzdWIiOjcwNjY5MTYwMywiYXVkIjoiZ2FvZGluZ3giLCJleHAiOjE2NTI3ODA4NzIsImp0aSI6IjE3NWNiNDE0N2NjMTQ3ZWMxZjliNDAyOWVjNTk1ZWIzOGFlNzZkNzYifQ.Rd207yMMm7L7t4-VXZj45tRsAmpBg2R5kFBpcJleZJ0', 'refresh_token': 'ba8d0f9f92a5a6515fc5532d3c3d2cf9d74bfcaa', 'access_token_expires_at': '2022-05-17T09:47:52.000Z', 'refresh_token_expires_at': '2022-05-31T09:47:52.709Z', 'access_token_life_time': 86400, 'refresh_token_life_time': 1296000}}
+INFO     testApi.py:testApi.py:49 request data：{"page_size":5}
+DEBUG    urllib3.connectionpool:connectionpool.py:971 Starting new HTTPS connection (1): fat.gaoding.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:452 https://fat.gaoding.com:443 "GET /api/v3/bp/marketing-calendars?%7B%22page_size%22:5%7D HTTP/1.1" 500 118
+INFO     testApi.py:testApi.py:51 response data：{'code': 500, 'body': {'code': 500, 'message': 'Internal Server Error', 'data': 'Not enough variable values available to expand \'"page_size"\''}}

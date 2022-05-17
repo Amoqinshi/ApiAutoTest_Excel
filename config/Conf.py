@@ -130,8 +130,8 @@ if __name__ == "__main__":
     # print(log_path)
     # print(ConfigYaml().get_db_conf("DB_Test"))
     # print(ConfigYaml().get_db_conf("DB_Release"))
-    print(ConfigYaml().get_email_info())
-    # pass
+    # print(ConfigYaml().get_email_info())
+    pass
 
 
 

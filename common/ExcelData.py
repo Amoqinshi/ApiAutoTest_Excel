@@ -51,7 +51,9 @@ class CaseData(object):
         return None
 
 
-testcase = "../data/ApiCases1.xlsx"
+# testcase = "../data/ApiCases.xlsx"
+# for x in CaseData(testcase).get_run_case():
+#     print(x)
 # print(CaseData(testcase).get_run_case())
 # print("===================================")
 # print(CaseData(testcase).get_all_case())

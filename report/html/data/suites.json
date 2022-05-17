@@ -9,7 +9,7 @@
         "name" : "TestLogin",
         "children" : [ {
           "name" : "test_run[case0]",
-          "uid" : "c7c314b5b826716f",
+          "uid" : "c1897c049a057737",
           "parentUid" : "759c09004ac986edaef9f9e1be25253f",
           "status" : "passed",
           "time" : {
@@ -22,7 +22,7 @@
           "parameters" : [ "{'用例编号': '001', '用例ID': 'Login', '接口名称': '登陆接口', '测试案例': '登陆成功', '请求URL': '/connect/oauth/tokens', '前置条件': '', '请求方法': 'POST', '请求参数类别': 'json', '请求头': '{\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{\"grant_type\": \"password\",\"client_id\": \"gaodingx\",\"client_secret\": \"7da458070e57b98e11d00d9286f23537\",\"os\": \"mac os\",\"mobile_area_code\": 86,\"mobile\": \"18218080002\",\"password\": \"111111\"}', '预期结果': 200.0, '实际结果': '', '是否运行': 'Y'}" ]
         }, {
           "name" : "Current个人信息查看接口",
-          "uid" : "4fbdf5fe186f969d",
+          "uid" : "1c0293f000da7149",
           "parentUid" : "759c09004ac986edaef9f9e1be25253f",
           "status" : "passed",
           "time" : {
@@ -37,6 +37,118 @@
         "uid" : "759c09004ac986edaef9f9e1be25253f"
       } ],
       "uid" : "7b9b3323e64e59648259b855a01c6df1"
+    }, {
+      "name" : "testApi",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_run[case0]",
+          "uid" : "3a3b3154c45224a7",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752116838,
+            "stop" : 1652752116856,
+            "duration" : 18
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '001', '用例ID': 'Login', '接口名称': '登陆接口', '测试案例': '登陆成功', '请求URL': '/connect/oauth/tokens', '前置条件': '', '请求方法': 'POST', '请求参数类别': 'json', '请求头': '{\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{\"grant_type\": \"password\",\"client_id\": \"gaodingx\",\"client_secret\": \"7da458070e57b98e11d00d9286f23537\",\"os\": \"mac os\",\"mobile_area_code\": 86,\"mobile\": \"18218080002\",\"password\": \"111111\"}', '预期结果': 200.0, '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "Current个人信息查看接口",
+          "uid" : "5621a5108d496a2e",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752116864,
+            "stop" : 1652752119200,
+            "duration" : 2336
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '002', '用例ID': 'Current', '接口名称': '个人信息查看接口', '测试案例': '查询个人信息', '请求URL': '/api/website/ps/user/current', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{}', '预期结果': '\"706691603\"', '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "Modules资源位查看接口",
+          "uid" : "454a3e6de8955170",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752119208,
+            "stop" : 1652752121747,
+            "duration" : 2539
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '003', '用例ID': 'Modules', '接口名称': '资源位查看接口', '测试案例': '查询运营资源位', '请求URL': '/api/exhibitions/web_home_page/modules', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{\"page_size\":10}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "Marketing-calendars营销日历查看接口",
+          "uid" : "23db093aac330864",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752121761,
+            "stop" : 1652752123937,
+            "duration" : 2176
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '004', '用例ID': 'Marketing-calendars', '接口名称': '营销日历查看接口', '测试案例': '查询营销日历', '请求URL': '/api/v3/bp/marketing-calendars', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{\"page_size\":10}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "Filter信息流筛选器查看接口",
+          "uid" : "d4f075e81d4256e5",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752123951,
+            "stop" : 1652752126448,
+            "duration" : 2497
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '005', '用例ID': 'Filter', '接口名称': '信息流筛选器查看接口', '测试案例': '查询精选信息流', '请求URL': '/api/ai_search/gd_web/home/flow/filter', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{\"page_size\":\"20\"}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "Hot-word搜索热词查看接口",
+          "uid" : "28558fe1fc37c6e6",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752126459,
+            "stop" : 1652752128615,
+            "duration" : 2156
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '006', '用例ID': 'Hot-word', '接口名称': '搜索热词查看接口', '测试案例': '查询个人热词', '请求URL': '/api/aggregate/search/hotword', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "User-purpose常用用途查看接口",
+          "uid" : "e4ecf41d090037c9",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752128625,
+            "stop" : 1652752131058,
+            "duration" : 2433
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '007', '用例ID': 'User-purpose', '接口名称': '常用用途查看接口', '测试案例': '查询个人常用用途', '请求URL': '/api/ai_search/gd_web/home/user_purpose', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}" ]
+        }, {
+          "name" : "Order个人订单查看接口",
+          "uid" : "1de9d8185bc4ff2b",
+          "parentUid" : "c930a5bfc7184f8846e3238b2b52d6e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652752131066,
+            "stop" : 1652752133529,
+            "duration" : 2463
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'用例编号': '008', '用例ID': 'Order', '接口名称': '个人订单查看接口', '测试案例': '查询个人信息', '请求URL': '/api/v2/orders', '前置条件': 'Login', '请求方法': 'GET', '请求参数类别': 'json', '请求头': '{\"authorization\":\"Bearer ${token}$\",\"x-business-id\":\"1\",\"x-channel-id\":\"8\"}', '请求参数': '{\"business_id\":\"1\",\"page_size\":10,\"page_num\":1}', '预期结果': '', '实际结果': '', '是否运行': 'Y'}" ]
+        } ],
+        "uid" : "c930a5bfc7184f8846e3238b2b52d6e6"
+      } ],
+      "uid" : "dea9a807fa8bfe7ffac0ab34510cf4ce"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
   } ]

@@ -1,8 +1,74 @@
 {
-  "total" : 2,
+  "total" : 9,
   "items" : [ {
     "uid" : "de862a1579756d9d8ac482ea44191c7a",
     "name" : "个人信息查看接口",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "3927763c04cfc8dc9f2f93602fef02ff",
+    "name" : "资源位查看接口",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "58abcb107bb058ed90e5e4a7a1f384b9",
+    "name" : "营销日历查看接口",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "3abd52dc30584d2891963d4805e7dbfa",
+    "name" : "信息流筛选器查看接口",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "aaa1818e234bc976e29755480bb88efa",
+    "name" : "搜索热词查看接口",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "0dcff09b4db7f1ef0123de3042a016f8",
+    "name" : "常用用途查看接口",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "d2279308cc1e9121e0384a8dcb0787ff",
+    "name" : "个人订单查看接口",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

@@ -31,7 +31,6 @@ def init_db(DB_type):
     charset = db_info.get("db_charset")
     port = int(db_info.get("db_port"))
     database = ConnectDatabase(host,user,pwd,db_name,charset,port)
-    print(database)
     return database
 
 
